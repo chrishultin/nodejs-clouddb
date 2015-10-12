@@ -39,6 +39,7 @@ parameters:
     constraints:
     - allowed_values:
       - Ubuntu 12.04 LTS (Precise Pangolin) (PVHVM)
+      - Ubuntu 14.04 LTS (Trusty Tahr) (PVHVM)
       description: Must be a supported operating system.
 
   flavor:
@@ -81,7 +82,7 @@ parameters:
   kitchen:
     description: URL for the kitchen to use
     type: string
-    default: https://github.com/rackspace-orchestration-templates/nodejs-clouddb
+    default: https://github.com/chrishultin/nodejs-clouddb
 
   chef_version:
     description: Version of chef client to use
@@ -90,7 +91,7 @@ parameters:
 
   child_template:
     type: string
-    default: https://raw.githubusercontent.com/rackspace-orchestration-templates/nodejs-clouddb/master/node-web.yaml
+    default: https://raw.githubusercontent.com/chrishultin/nodejs-clouddb/master/node-web.yaml
 
   revision:
     label: Revision
